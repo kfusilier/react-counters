@@ -7,7 +7,6 @@ class Counter extends Component {
 
 	increaseCount = () => {
 		let count = this.state.count + 1;
-
 		this.setState({
 			count
 		});
@@ -15,7 +14,6 @@ class Counter extends Component {
 
 	decreaseCount = () => {
 		let count = this.state.count - 1;
-
 		this.setState({
 			count
 		});
@@ -25,10 +23,10 @@ class Counter extends Component {
     return (
       <div className="Counter">
         <h4>Counter: {this.state.count}</h4>
-	        <button>Decrement</button>
-	        <button onClick={this.increaseCount}>Decrement</button>
-	        <button>Increment</button>
-	        <button onClick={this.decreaseCount}>Increment</button>
+	        {/* <button>Decrement</button> */}
+	        <button onClick={this.increaseCount}>Increase</button>
+	        {/* <button>Increment</button> */}
+	        <button onClick={this.decreaseCount}>Decrease</button>
       </div>
     );
   }

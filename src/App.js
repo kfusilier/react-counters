@@ -13,6 +13,21 @@ class App extends Component {
 	    };
 	  }
 
+	increaseCounters = () => {
+		let moreCount = this.state.counterCount + 1;
+		this.setState({
+			counterCount: moreCount,
+		});
+	};
+
+	decreaseCounters = () => {
+		let lessCount = this.state.CounterCount - 1;
+		this.setState({
+			CounterCount: lessCount,
+		});
+	};
+
+
   render() {
     return (
       <div className="App">
