@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Counter from "./components/Counter/index.jsx";
+import Counter from "../Counter/index.jsx";
 
 class CounterList extends Component {
   render() {
